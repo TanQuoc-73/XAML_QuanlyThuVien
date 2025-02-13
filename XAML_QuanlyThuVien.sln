@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAML_QuanlyThuVien", "XAML_QuanlyThuVien\XAML_QuanlyThuVien.csproj", "{0C3F70DD-3509-47D4-AF3F-934CC0444BA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3F70DD-3509-47D4-AF3F-934CC0444BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3F70DD-3509-47D4-AF3F-934CC0444BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3F70DD-3509-47D4-AF3F-934CC0444BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3F70DD-3509-47D4-AF3F-934CC0444BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {774A9699-623E-49AE-8B3E-CDEB9DC7BBB6}
+	EndGlobalSection
+EndGlobal
