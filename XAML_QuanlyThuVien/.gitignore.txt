@@ -1,0 +1,17 @@
+# Bỏ qua thư mục build và các tệp tạm thời
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.nupkg
+
+# Bỏ qua các tệp cấu hình cục bộ
+App.config
+packages.config
+
+# Bỏ qua các tệp khác (tùy chọn)
+*.swp
+*.swo

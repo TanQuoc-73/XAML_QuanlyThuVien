@@ -5,12 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XAML_QuanlyThuVien.views"
         mc:Ignorable="d"
-        Title="Home" Height="650" Width="1000"
+        
+        Title="Home" 
+        
+        Height="700" Width="1200" WindowStartupLocation="CenterScreen" 
         WindowStyle="None" 
         ResizeMode="NoResize" 
         AllowsTransparency="True" 
         Background="Transparent">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Assets/Styles/Styles.xaml" />
+                <ResourceDictionary Source="../Assets/Styles/GlobalStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
-        
+        <Image Margin="265,325,607,197" Source="/Assets/Images/images.jpg" Stretch="Fill"/>
+        <Image Margin="0,0,0,10" Source="/Assets/Images/home2_bg.jpg" Stretch="Fill" Opacity="0.95"/>
+        <Button Content="x " HorizontalAlignment="Left" Margin="1163,0,0,0" VerticalAlignment="Top" Height="31" Width="37" Background="{x:Null}" Foreground="White" FontSize="16" BorderBrush="{x:Null}" Style="{StaticResource NoFocusButtonStyle}" Click="Button_Click" Cursor="Hand"/>
+        <Rectangle HorizontalAlignment="Left" Height="690" VerticalAlignment="Top" Width="206" Opacity="0.6">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF42342F" Offset="0.448"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Margin="24,16,1115,642" Source="/Assets/Images/logoHAU.png" Stretch="Fill" Opacity="0.7"/>
+        <Label Content="HAU" FontSize="36" FontFamily="Algerian" Foreground="White" Margin="85,10,1028,636" Opacity="0.7"/>
+        <StackPanel Margin="0,110,994,254">
+            <Button Content="Trang chu" Height="60" Width="162" Click="Button_Click_1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
+            <Button Content="Sach" Width="162" Height="60" Click="Button_Click_2" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
+            <Button Content="Thanh vien" Height="60" Width="162" Click="Button_Click_3" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
+            <Button Content="Muon tra" Height="60" Width="162" Click="Button_Click_4" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
+        </StackPanel>
+
     </Grid>
 </Window>
