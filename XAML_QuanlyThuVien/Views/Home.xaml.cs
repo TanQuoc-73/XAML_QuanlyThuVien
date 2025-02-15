@@ -49,5 +49,46 @@ namespace XAML_QuanlyThuVien.views
         {
 
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        
+
+                        // Phần tìm kiếm_Placeholder 
+                        private void PlaceholderTextBox_GotFocus(object sender, RoutedEventArgs e)
+                        {
+                            TextBox textBox = sender as TextBox;
+                            if (textBox.Text == "Tìm kiếm thông tin")
+                            {
+                                textBox.Text = string.Empty;
+                                textBox.Opacity = 1.0;
+                            }
+                        }
+
+                        private void PlaceholderTextBox_LostFocus(object sender, RoutedEventArgs e)
+                        {
+                            TextBox textBox = sender as TextBox;
+                            if (string.IsNullOrWhiteSpace(textBox.Text))
+                            {
+                                textBox.Text = "Tìm kiếm thông tin";
+                                textBox.Opacity = 0.5;
+                            }
+                        }
+
+                        private void PlaceholderTextBox_TextChanged(object sender, TextChangedEventArgs e)
+                        {
+                            TextBox textBox = sender as TextBox;
+                            if (textBox.Text == "Tìm kiếm thông tin")
+                            {
+                                textBox.Opacity = 0.5;
+                            }
+                            else
+                            {
+                                textBox.Opacity = 1.0;
+                            }
+                        }
+
     }
 }

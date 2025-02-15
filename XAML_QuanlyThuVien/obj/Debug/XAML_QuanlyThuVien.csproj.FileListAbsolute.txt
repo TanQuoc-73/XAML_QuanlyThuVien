@@ -148,3 +148,9 @@ C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bi
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\tr\Microsoft.Data.SqlClient.resources.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.pdb
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.xml
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.Wpf.xml

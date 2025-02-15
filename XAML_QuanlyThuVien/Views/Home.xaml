@@ -25,8 +25,9 @@
     <Grid>
         <Image Margin="265,325,607,197" Source="/Assets/Images/images.jpg" Stretch="Fill"/>
         <Image Margin="0,0,0,10" Source="/Assets/Images/home2_bg.jpg" Stretch="Fill" Opacity="0.95"/>
+        <Border BorderThickness="1" Margin="175,0,0,590" Background="#FFE8E8E8" Opacity="0.2"/>
         <Button Content="x " HorizontalAlignment="Left" Margin="1163,0,0,0" VerticalAlignment="Top" Height="31" Width="37" Background="{x:Null}" Foreground="White" FontSize="16" BorderBrush="{x:Null}" Style="{StaticResource NoFocusButtonStyle}" Click="Button_Click" Cursor="Hand"/>
-        <Rectangle HorizontalAlignment="Left" Height="690" VerticalAlignment="Top" Width="206" Opacity="0.6">
+        <Rectangle HorizontalAlignment="Left" Height="690" VerticalAlignment="Top" Width="170" Opacity="0.6">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -34,14 +35,64 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Margin="24,16,1115,642" Source="/Assets/Images/logoHAU.png" Stretch="Fill" Opacity="0.7"/>
-        <Label Content="HAU" FontSize="36" FontFamily="Algerian" Foreground="White" Margin="85,10,1028,636" Opacity="0.7"/>
-        <StackPanel Margin="0,110,994,254">
+        <Grid Margin="10,10,1050,636">
+            <Border>
+                <Grid>
+                    <Image Margin="0,6,79,6" Source="/Assets/Images/logoHAU.png" Stretch="Fill" Opacity="0.7" RenderTransformOrigin="-0.092,0.61"/>
+                    <Label Content="HAU" FontSize="36" FontFamily="Algerian" Foreground="White" Margin="53,0,0,0" Opacity="0.7"/>
+                </Grid>
+            </Border>
+        </Grid>
+        <StackPanel x:Name="button_nav" Margin="0,110,1030,254">
             <Button Content="Trang chu" Height="60" Width="162" Click="Button_Click_1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
             <Button Content="Sach" Width="162" Height="60" Click="Button_Click_2" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
             <Button Content="Thanh vien" Height="60" Width="162" Click="Button_Click_3" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
             <Button Content="Muon tra" Height="60" Width="162" Click="Button_Click_4" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" FontSize="22" FontFamily="Global Monospace" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand"/>
         </StackPanel>
+
+        <StackPanel x:Name="account" Margin="0,414,1030,0"/>
+
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="658" Margin="388,26,0,0" CornerRadius="10" Opacity="0.8" Background="#FF737373">
+            <Button Margin="602,0,0,0" Background="#FFA19E9E" Foreground="{x:Null}" BorderBrush="{x:Null}">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="10">
+                            <Image Height="36" Source="/Assets/Images/icon-btn/search_btn.png" Stretch="Fill" Width="47" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="-0.012"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Border>
+
+        <TextBox x:Name="search_text"
+         Style="{StaticResource NoFocusTextBoxStyle}"
+         HorizontalAlignment="Left" 
+         Margin="429,33,0,0" 
+         TextWrapping="Wrap" 
+         Text="Tìm kiếm thông tin" 
+         TextAlignment="Center"
+         VerticalAlignment="Top" 
+         Width="528" Height="26" 
+         GotFocus="PlaceholderTextBox_GotFocus"
+         LostFocus="PlaceholderTextBox_LostFocus" 
+         TextChanged="PlaceholderTextBox_TextChanged" 
+         Opacity="0.9" 
+         SelectionBrush="{x:Null}" 
+         FontFamily="Global Monospace" 
+         FontSize="20"/>    
 
     </Grid>
 </Window>

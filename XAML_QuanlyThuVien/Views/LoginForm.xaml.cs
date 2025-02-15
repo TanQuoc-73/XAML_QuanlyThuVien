@@ -14,6 +14,8 @@ using System.Windows.Shapes;
 using XAML_QuanlyThuVien.views;
 using System.Data.SqlClient;
 
+using System.Security.Cryptography;   // Sử dụng hash (mã băm) để bảo mật mật khẩu 
+
 namespace XAML_QuanlyThuVien
 {
     /// <summary>

@@ -53,7 +53,7 @@
          Width="220" Height="26" 
          GotFocus="PlaceholderTextBox_GotFocus"
          LostFocus="PlaceholderTextBox_LostFocus" 
-         TextChanged="PlaceholderTextBox_TextChanged" Opacity="0.9" SelectionBrush="{x:Null}"/>
+         TextChanged="PlaceholderTextBox_TextChanged" Opacity="0.9" SelectionBrush="{x:Null}" FontFamily="Global Monospace"/>
 
         <!-- TextBox nhập mật khẩu -->
         <PasswordBox x:Name="PasswordBox"
@@ -91,17 +91,9 @@
            HorizontalAlignment="Center"
            IsHitTestVisible="False" 
            Margin="0,353,0,0" Width="220" Height="26" Opacity="0.9"/>
-
-        <CheckBox Content=""
-          HorizontalAlignment="Left" 
-          Margin="602,358,0,0" 
-          VerticalAlignment="Top" 
-          BorderBrush="{x:Null}" 
-          Foreground="#FF626262" 
-          Background="#FFE6B5B5" 
-          Opacity="0.8"
-          Checked="CheckBox_Checked"
-          Unchecked="CheckBox_Unchecked"/>
+        <Border HorizontalAlignment="Left" Margin="602,358,0,0" VerticalAlignment="Top" CornerRadius="18" >
+            <CheckBox Content="" BorderBrush="{x:Null}" Foreground="#FF626262" Background="#FFE6B5B5" Opacity="0.8" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Height="15" Width="20"/>
+        </Border>
         <Button Content="Quên mật khẩu" HorizontalAlignment="Left" Margin="523,389,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" FontFamily="Global Monospace" Opacity="0.8" Click="Button_Click_1"/>
 
     </Grid>
