@@ -21,7 +21,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Image Source="/Assets/images/LoginForm_bg.jpg" Stretch="Fill" />
+        <Image Source="/Assets/images/LoginForm_bg.jpg" Stretch="Fill" OpacityMask="Black" />
         <Rectangle x:Name="WhiteBox" HorizontalAlignment="Center" Height="332" Stroke="#FF4A4038" VerticalAlignment="Center" Width="304" OpacityMask="#FF565252" Opacity="0.2" RadiusX="10" RadiusY="10">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -35,7 +35,7 @@
         <Rectangle HorizontalAlignment="Center" Height="36" Stroke="#FFCEB5B5" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="0,289,0,0"/>
         <Rectangle HorizontalAlignment="Center" Height="36" Stroke="#FFC3AEAE" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="0,348,0,0"/>
 
-        <Border HorizontalAlignment="Center" VerticalAlignment="Top" Height="39" Width="124" Margin="0,438,0,0" CornerRadius="10" Opacity="0.8" Background="#FF6D6D6D">
+        <Border HorizontalAlignment="Center" VerticalAlignment="Top" Height="39" Width="124" Margin="0,430,0,0" CornerRadius="10" Opacity="0.8" Background="#FF6D6D6D">
             <Button Content="Xác nhận " FontSize="20" FontFamily="Global Monospace" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" Click="DangNhapButton_Click" Margin="16,0,10,0"/>
         </Border>
         <Label Content="Trường đại học kiến trúc Hà Nội" HorizontalAlignment="Left" Margin="795,620,0,0" VerticalAlignment="Top" Width="205" FontFamily="Ink Free" Height="30" FontSize="14" HorizontalContentAlignment="Center" Foreground="White" Opacity="0.7"/>
@@ -95,6 +95,8 @@
             <CheckBox Content="" BorderBrush="{x:Null}" Foreground="#FF626262" Background="#FFE6B5B5" Opacity="0.8" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Height="15" Width="20"/>
         </Border>
         <Button Content="Quên mật khẩu" HorizontalAlignment="Left" Margin="523,389,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" FontFamily="Global Monospace" Opacity="0.8" Click="Button_Click_1"/>
+        <CheckBox Content="Admin " HorizontalAlignment="Left" Margin="390,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD"/>
+        <CheckBox Content="Thành viên " HorizontalAlignment="Left" Margin="533,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD"/>
 
     </Grid>
 </Window>

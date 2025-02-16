@@ -14,9 +14,7 @@ C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\ob
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\ControlzEx.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\MahApps.Metro.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Xaml.Behaviors.dll
-C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\ControlzEx.pdb
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\ControlzEx.xml
-C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\MahApps.Metro.pdb
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\MahApps.Metro.xml
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Xaml.Behaviors.xml
@@ -154,3 +152,9 @@ C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bi
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.xml
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Bcl.Memory.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\System.Formats.Asn1.dll
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Bcl.Memory.xml
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\System.Formats.Asn1.xml
