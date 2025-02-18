@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 
 
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 
 namespace XAML_QuanlyThuVien.views
 {
@@ -39,7 +40,7 @@ namespace XAML_QuanlyThuVien.views
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

@@ -9,9 +9,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="XAML_QuanlyThuVien.views.Home"
         
         mc:Ignorable="d"
-        
-        Title="Home" 
-        
+        Title="Home"  
         Height="700" Width="1200" WindowStartupLocation="CenterScreen" 
         WindowStyle="None" 
         ResizeMode="NoResize" 
@@ -27,18 +25,10 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Image Margin="265,325,607,197" Source="/Assets/Images/images.jpg" Stretch="Fill"/>
-        <Image Source="/Assets/Images/home2_bg.jpg" Stretch="Fill" Opacity="0.95"/>
-        <Border BorderThickness="1" Margin="170,0,0,590" Background="#FFE8E8E8" Opacity="0.2"/>
+        <Image Source="/Assets/Images/brown_solid_bg.png" Stretch="Fill" Opacity="0.95"/>
+        <Border BorderThickness="1" Margin="170,0,0,590" Opacity="0.2" Background="#FFE0E0E0"/>
         <Button Content="x " HorizontalAlignment="Left" Margin="1163,0,0,0" VerticalAlignment="Top" Height="31" Width="37" Background="{x:Null}" Foreground="White" FontSize="16" BorderBrush="{x:Null}" Style="{StaticResource NoFocusButtonStyle}" Click="Button_Click" Cursor="Hand"/>
-        <Rectangle HorizontalAlignment="Left" Height="700" VerticalAlignment="Center" Width="170" Opacity="0.6">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="#FF42342F" Offset="0.448"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" VerticalAlignment="Center" Width="170" Opacity="0.6" Fill="#FF373737"/>
         <Grid Margin="10,10,1050,636">
             <Border>
                 <Grid>
@@ -88,9 +78,9 @@
          Margin="429,33,0,0" 
          TextWrapping="Wrap" 
          Text="Tìm kiếm thông tin" 
-         TextAlignment="Center"
+         TextAlignment="Left"
          VerticalAlignment="Top" 
-         Width="528" Height="26" 
+         Width="539" Height="26" 
          GotFocus="PlaceholderTextBox_GotFocus"
          LostFocus="PlaceholderTextBox_LostFocus" 
          TextChanged="PlaceholderTextBox_TextChanged" 
@@ -98,8 +88,8 @@
          SelectionBrush="{x:Null}" 
          FontFamily="Global Monospace" 
          FontSize="20"/>
-        <Border x:Name="chart" BorderThickness="1" Margin="170,110,0,235" Background="#FF818181" Opacity="0.2"/>
-        <Border BorderThickness="1" Margin="170,470,0,-5" Background="#FFD9D9D9" Opacity="0.6"/>
+        <Border x:Name="chart" BorderThickness="1" Margin="170,149,0,196"/>
+        <Border BorderThickness="1" Margin="170,470,0,-5" Opacity="0.6"/>
 
     </Grid>
 </Window>
