@@ -21,8 +21,12 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <Image Source="/Assets/images/LoginForm_bg.jpg" Stretch="Fill" OpacityMask="Black" />
-        <Rectangle x:Name="WhiteBox" HorizontalAlignment="Center" Height="332" Stroke="#FF4A4038" VerticalAlignment="Center" Width="304" OpacityMask="#FF565252" Opacity="0.2" RadiusX="10" RadiusY="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="987*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Assets/images/LoginForm_bg.jpg" Stretch="Fill" OpacityMask="Black" Grid.ColumnSpan="2" />
+        <Rectangle x:Name="WhiteBox" HorizontalAlignment="Left" Height="332" Stroke="#FF4A4038" VerticalAlignment="Center" Width="304" OpacityMask="#FF565252" Opacity="0.2" RadiusX="10" RadiusY="10" Grid.Column="1" Margin="335,0,0,0">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -30,30 +34,30 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button Content="x" HorizontalAlignment="Left" Margin="960,0,0,628" VerticalAlignment="Bottom" Height="22" Width="30" Opacity="0.7" Style="{StaticResource NoFocusButtonStyle}" Click="Button_Click" Cursor="Hand"/>
-        <Label Content="Đăng Nhập" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" Width="204" FontFamily="Global Monospace" Height="55" FontSize="36" HorizontalContentAlignment="Center" Foreground="White" Background="{x:Null}"/>
-        <Rectangle HorizontalAlignment="Center" Height="36" Stroke="#FFCEB5B5" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="0,289,0,0"/>
-        <Rectangle HorizontalAlignment="Center" Height="36" Stroke="#FFC3AEAE" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="0,348,0,0"/>
+        <Button Content="x" HorizontalAlignment="Left" Margin="947,0,0,628" VerticalAlignment="Bottom" Height="22" Width="30" Opacity="0.7" Style="{StaticResource NoFocusButtonStyle}" Click="Button_Click" Cursor="Hand" Grid.Column="1"/>
+        <Label Content="Đăng Nhập" HorizontalAlignment="Left" Margin="385,194,0,0" VerticalAlignment="Top" Width="204" FontFamily="Global Monospace" Height="55" FontSize="36" HorizontalContentAlignment="Center" Foreground="White" Background="{x:Null}" Grid.Column="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="36" Stroke="#FFCEB5B5" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="355,289,0,0" Grid.Column="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="36" Stroke="#FFC3AEAE" VerticalAlignment="Top" Width="264" RadiusX="10" RadiusY="10" Margin="355,348,0,0" Grid.Column="1"/>
 
-        <Border HorizontalAlignment="Center" VerticalAlignment="Top" Height="39" Width="124" Margin="0,430,0,0" CornerRadius="10" Opacity="0.8" Background="#FF6D6D6D">
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" Height="39" Width="124" Margin="425,430,0,0" CornerRadius="10" Opacity="0.8" Background="#FF6D6D6D" Grid.Column="1">
             <Button Content="Xác nhận " FontSize="20" FontFamily="Global Monospace" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" Click="DangNhapButton_Click" Margin="16,0,10,0"/>
         </Border>
-        <Label Content="Trường đại học kiến trúc Hà Nội" HorizontalAlignment="Left" Margin="795,620,0,0" VerticalAlignment="Top" Width="205" FontFamily="Ink Free" Height="30" FontSize="14" HorizontalContentAlignment="Center" Foreground="White" Opacity="0.7"/>
-        <Image Margin="772,625,202,5" Source="/Assets/images/logoHAU.png" Stretch="Fill" Opacity="0.5" RenderTransformOrigin="1.99,0.99"/>
-        <Label Content="Phần mềm quản lý thư viện" HorizontalAlignment="Left" Margin="-13,620,0,0" VerticalAlignment="Top" Width="205" FontFamily="Ink Free" Height="30" FontSize="14" HorizontalContentAlignment="Center" Foreground="White" Opacity="0.7"/>
+        <Label Content="Trường đại học kiến trúc Hà Nội" HorizontalAlignment="Left" Margin="782,620,0,0" VerticalAlignment="Top" Width="205" FontFamily="Ink Free" Height="30" FontSize="14" HorizontalContentAlignment="Center" Foreground="White" Opacity="0.7" Grid.Column="1"/>
+        <Image Margin="759,625,202,5" Source="/Assets/images/logoHAU.png" Stretch="Fill" Opacity="0.5" RenderTransformOrigin="1.99,0.99" Grid.Column="1"/>
+        <Label Content="Phần mềm quản lý thư viện" HorizontalAlignment="Left" Margin="-13,620,0,0" VerticalAlignment="Top" Width="205" FontFamily="Ink Free" Height="30" FontSize="14" HorizontalContentAlignment="Center" Foreground="White" Opacity="0.7" Grid.ColumnSpan="2"/>
 
         <!-- TextBox nhập tài khoản -->
         <TextBox x:Name="EmailTextBox"
          Style="{StaticResource NoFocusTextBoxStyle}"
-         HorizontalAlignment="Center" 
-         Margin="0,294,0,0" 
+         HorizontalAlignment="Left" 
+         Margin="377,294,0,0" 
          TextWrapping="Wrap" 
          Text="Nhập gmail" 
          VerticalAlignment="Top" 
          Width="220" Height="26" 
          GotFocus="PlaceholderTextBox_GotFocus"
          LostFocus="PlaceholderTextBox_LostFocus" 
-         TextChanged="PlaceholderTextBox_TextChanged" Opacity="0.9" SelectionBrush="{x:Null}" FontFamily="Global Monospace"/>
+         TextChanged="PlaceholderTextBox_TextChanged" Opacity="0.9" SelectionBrush="{x:Null}" FontFamily="Global Monospace" Grid.Column="1"/>
 
         <!-- TextBox nhập mật khẩu -->
         <PasswordBox x:Name="PasswordBox"
@@ -67,7 +71,7 @@
              GotFocus="PasswordBox_GotFocus"
              LostFocus="PasswordBox_LostFocus"
              PasswordChanged="PasswordBox_PasswordChanged" 
-             Margin="390,353,390,271" Opacity="0.9" SelectionBrush="{x:Null}"/>
+             Margin="377,353,390,271" Opacity="0.9" SelectionBrush="{x:Null}" Grid.Column="1"/>
 
         <TextBox x:Name="VisiblePasswordBox"
          Style="{StaticResource NoFocusTextBoxStyle}"
@@ -80,7 +84,7 @@
          GotFocus="PasswordBox_GotFocus"
          LostFocus="PasswordBox_LostFocus"
          Visibility="Collapsed"
-         Margin="390,353,390,271" Opacity="0.9"/>
+         Margin="377,353,390,271" Opacity="0.9" Grid.Column="1"/>
 
         <TextBlock x:Name="PasswordPlaceholder"
            Text="Nhập mật khẩu"
@@ -88,15 +92,15 @@
            FontFamily="Global Monospace"
            FontSize="16"
            VerticalAlignment="Top"
-           HorizontalAlignment="Center"
+           HorizontalAlignment="Left"
            IsHitTestVisible="False" 
-           Margin="0,353,0,0" Width="220" Height="26" Opacity="0.9"/>
-        <Border HorizontalAlignment="Left" Margin="602,358,0,0" VerticalAlignment="Top" CornerRadius="18" >
+           Margin="377,353,0,0" Width="220" Height="26" Opacity="0.9" Grid.Column="1"/>
+        <Border HorizontalAlignment="Left" Margin="589,358,0,0" VerticalAlignment="Top" CornerRadius="18" Grid.Column="1" >
             <CheckBox Content="" BorderBrush="{x:Null}" Foreground="#FF626262" Background="#FFE6B5B5" Opacity="0.8" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" Height="15" Width="20"/>
         </Border>
-        <Button Content="Quên mật khẩu" HorizontalAlignment="Left" Margin="523,389,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" FontFamily="Global Monospace" Opacity="0.8" Click="Button_Click_1"/>
-        <CheckBox Content="Admin " HorizontalAlignment="Left" Margin="390,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD"/>
-        <CheckBox Content="Thành viên " HorizontalAlignment="Left" Margin="533,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD"/>
+        <Button Content="Quên mật khẩu" HorizontalAlignment="Left" Margin="510,389,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Style="{StaticResource NoFocusButtonStyle}" Cursor="Hand" FontFamily="Global Monospace" Opacity="0.8" Click="Button_Click_1" Grid.Column="1"/>
+        <CheckBox Content="Admin " HorizontalAlignment="Left" Margin="377,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD" Grid.Column="1"/>
+        <CheckBox Content="Thành viên " HorizontalAlignment="Left" Margin="520,262,0,0" VerticalAlignment="Top" FontFamily="Global Monospace" OpacityMask="Black" Background="#FFA6A6A6" BorderBrush="{x:Null}" Foreground="#FFDDDDDD" Grid.Column="1"/>
 
     </Grid>
 </Window>

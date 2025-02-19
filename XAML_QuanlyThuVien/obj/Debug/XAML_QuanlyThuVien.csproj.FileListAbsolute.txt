@@ -41,8 +41,6 @@ C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\ob
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\obj\Debug\views\Home.baml
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\obj\Debug\Assets\Styles\Styles.baml
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\obj\Debug\Assets\Styles\GlobalStyles.baml
-C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\obj\Debug\Views\Book.g.cs
-C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\obj\Debug\Views\Book.baml
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Azure.Core.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\Azure.Identity.dll
 C:\Users\cutor\OneDrive\Desktop\C#\code\XAML_QuanlyThuVien\XAML_QuanlyThuVien\bin\Debug\BouncyCastle.Cryptography.dll
